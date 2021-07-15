@@ -2,6 +2,9 @@ import "react-native-gesture-handler";
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { SafeAreaProvider } from "react-native-safe-area-context";
+// import * as sqlite from "expo-sqlite";
+// import { BaseModel, types } from "expo-sqlite-orm";
+
 // import * as eva from "@eva-design/eva";
 // import { ApplicationProvider, Layout, Text } from "@ui-kitten/components";
 

@@ -6,7 +6,7 @@ import { Text, View } from "../components/Themed";
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      {/* <Text style={styles.title}>This is your total portfolio</Text> */}
+      <Text style={styles.title}>Today's gains</Text>
       <View style={styles.separator} lightColor="#fff" darkColor="#2c2a36" />
     </View>
   );
@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
   separator: {
     marginVertical: 30,
     height: 1,
-    width: "80%",
+    width: "100%",
   },
 });

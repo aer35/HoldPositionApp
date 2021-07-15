@@ -16,6 +16,8 @@ export default function SettingsScreen() {
   const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
   return (
     <View style={styles.container}>
+      {/* If you decide you want to add a line before the first setting */}
+      {/* <View style={styles.rowSeparator} lightColor="#fff" darkColor="#2c2a36" /> */}
       <View style={styles.row}>
         <Text style={styles.settingText}>Dark Theme</Text>
         <Switch
@@ -35,6 +37,18 @@ export default function SettingsScreen() {
           value={isEnabled}
         />
       </View>
+      <View style={styles.rowSeparator} lightColor="#fff" darkColor="#2c2a36" />
+      <View style={styles.row}>
+        <Text style={styles.settingText}>Setting 3</Text>
+        <Switch
+          trackColor={{ false: "#767577", true: "#81b0ff" }}
+          thumbColor={"#f4f3f4"}
+          onValueChange={toggleSwitch}
+          value={isEnabled}
+        />
+      </View>
+      {/* If you decide you want to add a line after the last setting */}
+      {/* <View style={styles.rowSeparator} lightColor="#fff" darkColor="#2c2a36" /> */}
     </View>
   );
 }
@@ -57,7 +71,8 @@ const styles = StyleSheet.create({
     width: "80%",
   },
   row: {
-    marginTop: 3,
+    marginTop: 10,
+    marginBottom: 5,
     backgroundColor: "#2c2a36",
     flexDirection: "row",
   },
@@ -68,7 +83,7 @@ const styles = StyleSheet.create({
   },
   settingText: {
     fontSize: 15,
-    width: "80%",
+    width: "85%",
     color: "#fff",
   },
 });

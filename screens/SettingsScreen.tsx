@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     backgroundColor: "#2c2a36",
-    flexDirection: "column",
   },
   title: {
     fontSize: 20,
@@ -58,14 +57,9 @@ const styles = StyleSheet.create({
     width: "80%",
   },
   row: {
-    marginTop: 5,
-    flex: -1,
-    alignSelf: "stretch",
-    justifyContent: "center",
+    marginTop: 3,
     backgroundColor: "#2c2a36",
-    borderColor: "#fff",
-    borderStyle: "solid",
-    borderWidth: 0,
+    flexDirection: "row",
   },
   rowSeparator: {
     marginVertical: 0,
@@ -74,6 +68,7 @@ const styles = StyleSheet.create({
   },
   settingText: {
     fontSize: 15,
+    width: "80%",
     color: "#fff",
   },
 });

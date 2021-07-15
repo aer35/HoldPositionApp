@@ -15,7 +15,6 @@ import SettingsScreen from "../screens/SettingsScreen";
 import { BottomTabParamList, HomeParamList, SettingsParamList } from "../types";
 import { AntDesign } from "@expo/vector-icons";
 
-
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
 export default function BottomTabNavigator() {
@@ -41,7 +40,7 @@ export default function BottomTabNavigator() {
         component={SettingsNavigator}
         options={{
           tabBarIcon: ({ focused, color, size }) => (
-            <AntDesign name="setting" size={24} color={color}/>
+            <AntDesign name="setting" size={24} color={color} />
           ),
         }}
       />

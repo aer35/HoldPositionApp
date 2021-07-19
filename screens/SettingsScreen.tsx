@@ -6,14 +6,20 @@ import { wrap } from "yargs";
 import { Text, View } from "../components/Themed";
 
 export default function SettingsScreen() {
+  // Does each setting require a function?
+
   // Function to handle the dark mode switch
   const [isEnabledDarkMode, setIsEnabledDarkMode] = useState(false);
   const toggleDarkMode = () =>
     setIsEnabledDarkMode((previousState) => !previousState);
 
   // function to handle the setting2 switch
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled((previousState) => !previousState);
+  const [isEnabled2, setIsEnabled2] = useState(false);
+  const toggleSwitch2 = () => setIsEnabled2((previousState) => !previousState);
+
+  // function to handle the setting3 switch
+  const [isEnabled3, setIsEnabled3] = useState(false);
+  const toggleSwitch3 = () => setIsEnabled3((previousState) => !previousState);
   return (
     <View style={styles.container}>
       {/* If you decide you want to add a line before the first setting */}
@@ -33,8 +39,8 @@ export default function SettingsScreen() {
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={"#f4f3f4"}
-          onValueChange={toggleSwitch}
-          value={isEnabled}
+          onValueChange={toggleSwitch2}
+          value={isEnabled2}
         />
       </View>
       <View style={styles.rowSeparator} lightColor="#fff" darkColor="#2c2a36" />
@@ -43,8 +49,8 @@ export default function SettingsScreen() {
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={"#f4f3f4"}
-          onValueChange={toggleSwitch}
-          value={isEnabled}
+          onValueChange={toggleSwitch3}
+          value={isEnabled3}
         />
       </View>
       {/* If you decide you want to add a line after the last setting */}
